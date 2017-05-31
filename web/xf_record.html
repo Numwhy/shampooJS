@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 窗口自动调整,禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!-- 隐藏地址栏,仅针对ios的safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 仅针对ios的safari顶端状态条的样式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>洗发水</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/fontSize.js"></script>
+</head>
+<body>
+<!-- 页面开始 -->
+<div class="wrap">
+    <!-- 头部 消费记录 -->
+    <div class="xf_expense">
+        <div class="header navbar-fixed-top">
+            <h1 class="text-center"><a href="expense.html" class="icon iconfont icon-fanhui"></a>消费记录</h1>
+        </div>
+        <div class="expense_jl usermine xf_record">
+            <!-- 消费记录为空 -->
+            <!--<div class="xf_record_null">
+                <img src="../images/xfRecord.png" />
+                <p>这里暂无消费记录哦</p>
+            </div>-->
+            <!-- 消费记录 -->
+            <div class="xf_recordbox">
+                <div class="xf_record_date">
+                    <p class="clearfix"><i class="icon iconfont icon-rili text-danger"></i>&nbsp;&nbsp;3月消费记录<span class="pull-right">累计￥<span>897</span></span></p>
+                    <div class="xf_record_xj clearfix">
+                        <p class="xf_record_xjt clearfix">
+                            <span class="xf_record_r"></span>购买岳灵生发育发液<span class="pull-right text-danger">￥<span>299</span></span>
+                        </p>
+                        <p class="xf_record_xjb">
+                            <span class="xf_record_s"></span><span class="xf_record_xjbd">17/03/21&nbsp;&nbsp;13:24</span>
+                            <span class="pull-right text_ye">+3</span>
+                        </p>
+                    </div>
+                    <div class="xf_record_xj clearfix">
+                        <p class="xf_record_xjt clearfix">
+                            <span class="xf_record_r"></span>购买岳灵生发育发液<span class="pull-right text-danger">￥<span>299</span></span>
+                        </p>
+                        <p class="xf_record_xjb">
+                            <span class="xf_record_s"></span><span class="xf_record_xjbd">17/03/20&nbsp;&nbsp;13:24</span>
+                            <span class="pull-right text_ye">+3</span>
+                        </p>
+                    </div>
+                    <div class="xf_record_xj clearfix">
+                        <p class="xf_record_xjt clearfix">
+                            <span class="xf_record_r"></span>购买岳灵生发育发液<span class="pull-right text-danger">￥<span>299</span></span>
+                        </p>
+                        <p class="xf_record_xjb">
+                            <span class="xf_record_s"></span><span class="xf_record_xjbd">17/03/11&nbsp;&nbsp;13:24</span>
+                            <span class="pull-right text_ye">+3</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="xf_record_date">
+                    <p class="clearfix"><i class="icon iconfont icon-rili text-danger"></i>&nbsp;&nbsp;3月消费记录<span class="pull-right">累计￥<span>598</span></span></p>
+                    <div class="xf_record_xj clearfix">
+                        <p class="xf_record_xjt clearfix">
+                            <span class="xf_record_r"></span>购买岳灵生发育发液<span class="pull-right text-danger">￥<span>299</span></span>
+                        </p>
+                        <p class="xf_record_xjb">
+                            <span class="xf_record_s"></span><span class="xf_record_xjbd">17/02/21&nbsp;&nbsp;13:24</span>
+                            <span class="pull-right text_ye">+3</span>
+                        </p>
+                    </div>
+                    <div class="xf_record_xj clearfix">
+                        <p class="xf_record_xjt clearfix">
+                            <span class="xf_record_r"></span>购买岳灵生发育发液<span class="pull-right text-danger">￥<span>299</span></span>
+                        </p>
+                        <p class="xf_record_xjb">
+                            <span class="xf_record_s"></span><span class="xf_record_xjbd">17/02/20&nbsp;&nbsp;13:24</span>
+                            <span class="pull-right text_ye">+3</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="expense_jia icon iconfont icon-tianjia"></i>
+    </div>
+    <!-- 添加消费记录 -->
+    <div class="xf_expense1 dis">
+        <div class="header navbar-fixed-top">
+            <h1 class="text-center"><a href="javascript:void(0)" class="icon iconfont icon-fanhui"></a>添加消费记录</h1>
+        </div>
+        <div class="expense_jl xf_expense1_txt">
+            <ul>
+                <li class="clearfix">
+                    <p class="pull-left">消费时间</p>
+                    <input type="text" name="expense_date" placeholder="年/月/日" class="date pull-right text-right" readonly data-field="date">
+                </li>
+                <li class="clearfix">
+                    <p class="pull-left">类别</p>
+                    <span class="xf_expense1_txt1">请选择内容</span>
+                    <i class="jt icon iconfont icon-xiangyou pull-right"></i>
+                </li>
+                <div class="xf_expense1_txt1_lx">
+                    <ul class="clearfix">
+                        <li>脱发再生</li>
+                        <li>白发转黑</li>
+                        <li>养发生发</li>
+                        <li>脱眉</li>
+                        <li>斑秃</li>
+                        <li>全秃</li>
+                        <li>头癣</li>
+                        <li>毛囊炎</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+                <li class="clearfix">
+                    <p class="pull-left">消费项目</p>
+                    <input type="text" name="expense_xf" class="pull-right text-right" placeholder="请输入消费项目" />
+                </li>
+                <li class="clearfix">
+                    <p class="pull-left">消费金额</p>
+                    <input type="text" name="expense_xf" class="pull-right text-right" placeholder="请输入消费金额" />
+                </li>
+                <input type="button" class="btn btn-danger expense_bc" value="保存" />
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/style.js"></script>
+<script src="../js/datePicker.js"></script>
+<script>
+    var calendar = new datePicker();
+    calendar.init({
+        'trigger' : '.date', /*按钮选择器，用于触发弹出日期*/
+        'type' : 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+        'minDate' : '1900-1-1',/*最小日期*/
+        'maxDate' : '2222-02-22',/*最大日期*/
+        'onSubmit' :function(){/*确认时触发事件*/
+            var theSelectData = calendar.value;
+        },
+        'onclose' : function(){/*取消时触发事件*/}
+    })
+</script>
+</body>
+</html>
